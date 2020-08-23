@@ -482,8 +482,6 @@ $('body').on("click", ".js-show-streams", event => {
     $('.js-show-streams').fadeOut();
     $('.js-new-search-container').fadeOut({
         complete: function() {
-            $('.js-streaming-area').removeClass('hidden').hide().fadeIn("slow");
-            $('.js-new-search-container').fadeIn("slow");
         }}
     );
     });
