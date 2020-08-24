@@ -103,6 +103,10 @@ p {
 
 .results-area {
  width: 320px;
+  display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .genre-label {
@@ -219,6 +223,7 @@ li {
     height: 40px;
     border-radius: 5px;
     padding: 1px;
+    color: white;
 }
 
 .movieTitle {
@@ -256,6 +261,7 @@ span {
 .to {
     margin-top: 45px;
 }
+
 @media screen and (min-width: 600px) {
     .js-streaming {
         display: flex;
