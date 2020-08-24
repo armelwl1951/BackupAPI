@@ -3,24 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I'mBored</title>
+    <title>I'm Bored</title>
     <link rel='icon' href='./cd.ico' type='image/x-icon'/>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Rubik:ital@1&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>I'm Bored</h1>
+        <h1>I'mBored</h1>
     </header>
         <div class="instructions-container">
             <p class="app-info">This app uses the The Movie Database and Utelly APIs to provide you with a random movie recommendation.</p>
-            <p class="app-info">Hit the button below to begin.</p>
-            <button type="button" class="begin-button js-close-instructions">Begin</button>
-            <div class="tmdb-container">
-                <img class ="tmdb-logo" src="./tmdb_logo.svg" alt="The Movie Database logo."/>
-                <p class="tmdb-disclosure">This product uses the TMDb API but is not endorsed or certified by TMDb.</p>
             </div>
         </div>
-        <form class="search js-search hidden">
+        <form class="search js-search">
             <p class="release-year-instruct">Set release years (if you want)</p>
             <div class="release-year-container">
                 <div class="release-year-labels">
@@ -68,7 +64,7 @@
             <ul class='js-results'>
             </ul>
         </section>
-        <section class="streaming-area hidden js-streaming-area">
+        <section class="streaming-area js-streaming-area">
             <ul class="js-streaming"> 
             </ul>
         </section>
@@ -78,5 +74,5 @@
         </section>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
-</body>
+    </body>
 </html>
