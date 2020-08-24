@@ -337,7 +337,7 @@ function getStream(randomMovieID) {
         source_id: randomMovieID,
         source: "tmdb",
         country: "us",
-        api_key: '9e31b2a0d6msh399b4899e1128c5p1e5fcejsn4ee14e3adc6c'
+        api_key: '5b0990784amsh4e975c1a0c22343p1a97c2jsn22e544327dc5'
     };
     const queryString = formatQueryParams(params);
     const url = streamURL + '?' + queryString;
@@ -466,17 +466,6 @@ function fetchIDNoGenre(famousPerson,minReleaseYear,maxReleaseYear){
         });
 }
 
-function showSearch(){
-    //shows search form after hitting 'begin' button
-    $('.js-close-instructions').on("click", event => {
-        $('.instructions-container').fadeOut({
-            complete: function() {
-              $('.js-search').removeClass("hidden").hide().fadeIn("slow");
-            }}
-          );
-    });
-}
-
 function showStream(){
 $('body').on("click", ".js-show-streams", event => {
     $('.js-show-streams').fadeOut();
@@ -507,7 +496,7 @@ function watchForm(){
     $('.js-search').submit(event => {
         event.preventDefault();
         $('.js-results-area').addClass('hidden');
-        $('.js-streaming-area').addClass('hidden');
+        $('.js-streaming-area').addClass();
         $('.js-new-search-container').addClass('hidden');
         $('.js-new-search-container').empty();
         $('.js-results').empty();
@@ -570,6 +559,5 @@ function getMinReleaseYear(minYear) {
 }
 
 $(watchForm);
-$(showSearch);
 $(newSearch); 
 $(showStream);
